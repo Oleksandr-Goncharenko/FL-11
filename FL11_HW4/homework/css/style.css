@@ -1,4 +1,4 @@
-html, body, div, p, h1, h2, h3, h4, h5, h6, a, img, ol, ul, li, form, input, nav {
+html, body, div, p, h1, h2, a, form, input, nav {
   margin: 0;
   padding: 0;
   outline: 0;
@@ -7,10 +7,6 @@ html, body, div, p, h1, h2, h3, h4, h5, h6, a, img, ol, ul, li, form, input, nav
   font-weight: normal;
   background: transparent;
   box-sizing: border-box;
-}
-img {
-  max-width: 100%;
-  display: block;
 }
 button {
   cursor: pointer;
