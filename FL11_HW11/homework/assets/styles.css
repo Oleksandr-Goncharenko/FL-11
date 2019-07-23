@@ -1,0 +1,173 @@
+html, body, div, p, h1, h2, h4, input {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  line-height: 1;
+  font-weight: normal;
+  background: transparent;
+  box-sizing: border-box;
+}
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+button[disabled] {
+  cursor: default;
+}
+.flex-scc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+.row {
+  width: 100%;
+}
+body {
+  background: whitesmoke;
+}
+.wrapper {
+  max-width: 840px;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  min-height: 100vh;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.list__title {
+  text-align: center;
+  font-size: 36px;
+  color: #3bb2fe;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.list__btn_wrap {
+  height: 60px;
+  justify-content: center;
+  display: inline-block;
+  width: calc(10% - 4px);
+}
+.list__input {
+  height: 60px;
+  width: 90%;
+  line-height: 36px;
+  padding: 10px 20px;
+  border: 2px solid darkgoldenrod;
+}
+.list__btn {
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+button:hover .material-icons {
+  color: #b0e1ef;
+}
+button[disabled] .material-icons,
+.checked .item__edit .material-icons {
+  color: gainsboro;
+}
+.list__btn .material-icons {
+  font-size: 48px;
+  color: gray;
+}
+.list__separator {
+  margin-top: 20px;
+  height: 5px;
+  background: #b0e1ef;
+}
+.todos {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+.todos li {
+  height: 24px;
+}
+.todos li.empty {
+  height: 10px;
+  background: none;
+}
+.todos .editing {
+  height: 30px;
+}
+.checked .item__edit {
+  pointer-events: none;
+}
+.checked .item__text {
+  color: black;
+}
+.editing .item__checkbox,
+.editing .item__text,
+.editing .item__edit,
+.editing .item__delete,
+.item__change,
+.item__save {
+  display: none;
+}
+.editing .item__change,
+.editing .item__save {
+  display: block;
+}
+.item__checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.item__text {
+  color: #87cefa;
+  margin-right: 10px;
+}
+.item__edit {
+  color: #b0e1ef;
+  cursor: pointer;
+  height: 100%;
+  padding: 0;
+}
+.item__delete {
+  margin-left: auto;
+  color: #b0e1ef;
+  cursor: pointer;
+  height: 100%;
+  padding: 0;
+}
+.item__change {
+  width: 320px;
+  height: 26px;
+  padding: 2px 5px;
+  font-size: 14px;
+  color: #000000aa;
+  background: #ffffff;
+  margin-right: 8px;
+  border: 1px solid gray;
+}
+.item__save {
+  color: #b0e1ef;
+  cursor: pointer;
+  height: 24px;
+  padding: 0;
+}
+.item__save:hover:not([disabled]) .material-icons,
+.item__edit:hover:not([disabled]) .material-icons,
+.item__delete:hover:not([disabled]) .material-icons {
+  color: #3bb2fe;
+}
+.notification {
+  color: red;
+  text-align: center;
+  position: relative;
+  top: -25px;
+  height: 0;
+  display: none;
+}
+.notification.show {
+  display: block;
+}
+.material-icons {
+  user-select: none;
+}
