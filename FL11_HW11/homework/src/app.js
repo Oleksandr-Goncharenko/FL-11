@@ -134,15 +134,3 @@ function drop(ev) {
 function allowDrop(ev) {
   ev.preventDefault();
 }
-
-
-document.addEventListener('keyup', function (ev) {
-  if (ev.key === 'F2' ) {
-    inputField.focus();
-  }
-  if (ev.key === 'F4' ) {
-    if (inputField.value !== '') {
-      inputBtn.click();
-    }
-  }
-});
