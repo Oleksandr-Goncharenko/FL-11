@@ -1,0 +1,40 @@
+@import "_variables";
+
+.navbar-light {
+  & .navbar-nav {
+    & .active {
+      background-color: @blue;
+      &>.nav-link {
+        color: white;
+      }
+    }
+  }
+}
+.main-color {
+  color: @blue;
+}
+.main-bg {
+  background-color: @blue;
+}
+.theme-color (@color) {
+  background-color: @color;
+  border-color: @color;
+}
+.class-theme {
+  border: 1px solid black;
+  &-red {
+    .theme-color(@red);
+  }
+  &-blue {
+    .theme-color(@blue);
+  }
+  &-orange {
+    .theme-color(@orange);
+  }
+  &-green {
+    .theme-color(@green);
+  }
+}
+.footer-bg {
+  background: @grey;
+}
